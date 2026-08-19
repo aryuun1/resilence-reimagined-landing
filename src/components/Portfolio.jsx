@@ -1,3 +1,5 @@
+import { Sparkles, Target } from "lucide-react";
+
 const pcards = [
   {
     title: "Identity, Family and Relationship Continuity",
@@ -40,10 +42,16 @@ export function Portfolio() {
           at, not as a finished promise.
         </p>
 
-        <div className="feature-card reveal">
+        <div className="feature-card feature-card-fusion reveal">
+          <img
+            src="/images/Team Fusion - Background Image.jpeg"
+            alt=""
+            aria-hidden="true"
+            className="feature-card-bg"
+          />
           <div>
             <img src="/images/IMG_1336.jpeg" alt="INDIGLOW Initiative logo" className="feature-logo" />
-            <span className="tag">Our Main Youth Program</span>
+            <span className="tag"><Sparkles size={12} aria-hidden="true" />Our Main Youth Program</span>
             <h3>INDIGLOW Initiative</h3>
             <p>
               Helps young people understand who they are beyond their circumstances and labels,
@@ -53,7 +61,7 @@ export function Portfolio() {
             <span className="status-pill">Running now. Curriculum and delivery expanding.</span>
           </div>
           <div className="feature-side">
-            <span>Purpose</span>
+            <span><Target size={12} aria-hidden="true" />Purpose</span>
             We look at identity, wellbeing, creativity, and future possibility together, covering
             mind, body, brain, nervous system, and spirit, without reducing a person to just one
             of those parts.
@@ -62,7 +70,7 @@ export function Portfolio() {
 
         <div className="feature-card reveal">
           <div>
-            <span className="tag">Education Program</span>
+            <span className="tag"><Sparkles size={12} aria-hidden="true" />Education Program</span>
             <h3>P2P: Pattern to Purpose</h3>
             <p>
               Presentations and activities that help people recognize the patterns shaping their
@@ -72,7 +80,7 @@ export function Portfolio() {
             <span className="status-pill">Structure set. New presentations and activities in progress.</span>
           </div>
           <div className="feature-side">
-            <span>Program Promise</span>
+            <span><Target size={12} aria-hidden="true" />Program Promise</span>
             See the pattern. Understand its purpose. Resolve what no longer serves. Choose what
             comes next.
           </div>

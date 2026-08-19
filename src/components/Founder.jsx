@@ -1,4 +1,16 @@
+import { Quote } from "lucide-react";
 import { LotusMark } from "./LotusIcon.jsx";
+
+const quotes = [
+  "I am building what I needed earlier: a way to understand what happened without letting it become my identity.",
+  "The goal is not to erase the past. It is to learn from it, without letting it control the future.",
+  "Young people deserve more than a label, a placement, or a crisis response. They deserve the knowledge to understand themselves and the power to shape their future.",
+];
+
+const onStage = [
+  { src: "/images/Tina-Pic_speaking_sideways-smile.jpg", alt: "Tina Rose speaking on stage" },
+  { src: "/images/Tina-Pic_teaching.jpg", alt: "Tina Rose presenting at a podium" },
+];
 
 export function Founder() {
   return (
@@ -13,6 +25,13 @@ export function Founder() {
                 <span>Founder: Tina Rose</span>
               </div>
             </div>
+            <div className="founder-onstage">
+              {onStage.map((img) => (
+                <div className="founder-onstage-item" key={img.src}>
+                  <img src={img.src} alt={img.alt} />
+                </div>
+              ))}
+            </div>
           </div>
           <div className="reveal">
             <span className="eyebrow">Founder Story</span>
@@ -25,9 +44,12 @@ export function Founder() {
               becomes their identity.
             </p>
             <div className="founder-quotes">
-              <blockquote>I am building what I needed earlier: a way to understand what happened without letting it become my identity.</blockquote>
-              <blockquote>The goal is not to erase the past. It is to learn from it, without letting it control the future.</blockquote>
-              <blockquote>Young people deserve more than a label, a placement, or a crisis response. They deserve the knowledge to understand themselves and the power to shape their future.</blockquote>
+              {quotes.map((quote) => (
+                <blockquote key={quote}>
+                  <Quote size={16} aria-hidden="true" />
+                  <span>{quote}</span>
+                </blockquote>
+              ))}
             </div>
           </div>
         </div>

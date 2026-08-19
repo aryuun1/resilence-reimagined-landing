@@ -1,3 +1,5 @@
+import { HeartHandshake, Users } from "lucide-react";
+
 export function FinalCta() {
   return (
     <section className="final-cta" id="partner">
@@ -8,8 +10,8 @@ export function FinalCta() {
           presentations, partnerships, and research that can support real people at scale.
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#top">Become a Founding Supporter</a>
-          <a className="btn btn-ghost" href="#top">Partner With Us</a>
+          <a className="btn btn-primary" href="#top"><HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter</a>
+          <a className="btn btn-ghost" href="#top"><Users size={17} aria-hidden="true" />Partner With Us</a>
         </div>
       </div>
     </section>

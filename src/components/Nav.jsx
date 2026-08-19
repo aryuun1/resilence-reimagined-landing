@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { LotusMark } from "./LotusIcon.jsx";
 
 export function Nav() {
@@ -16,7 +17,7 @@ export function Nav() {
           <li><a href="#books">Books</a></li>
           <li><a href="#partner">Get Involved</a></li>
         </ul>
-        <a className="btn btn-primary btn-sm" href="#partner">Become a Founding Supporter</a>
+        <a className="btn btn-primary btn-sm" href="#partner">Become a Founding Supporter<ArrowRight size={15} aria-hidden="true" /></a>
       </div>
     </nav>
   );

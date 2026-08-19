@@ -1,3 +1,4 @@
+import { CheckCircle2, HeartHandshake, Users } from "lucide-react";
 import { EmberCanvas } from "./EmberCanvas.jsx";
 
 export function Hero() {
@@ -22,13 +23,13 @@ export function Hero() {
           matter, and make grounded decisions about their future.
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#partner">Become a Founding Supporter</a>
-          <a className="btn btn-ghost" href="#partner">Partner With Us</a>
+          <a className="btn btn-primary" href="#partner"><HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter</a>
+          <a className="btn btn-ghost" href="#partner"><Users size={17} aria-hidden="true" />Partner With Us</a>
         </div>
         <div className="status-row">
-          <span>Nonprofit corporation formed</span>
-          <span>Preparing to apply for Section 501(c)(3) recognition</span>
-          <span>Portfolio established and actively expanding</span>
+          <span><CheckCircle2 size={14} aria-hidden="true" />Nonprofit corporation formed</span>
+          <span><CheckCircle2 size={14} aria-hidden="true" />Preparing to apply for Section 501(c)(3) recognition</span>
+          <span><CheckCircle2 size={14} aria-hidden="true" />Portfolio established and actively expanding</span>
         </div>
       </div>
     </header>

@@ -1,9 +1,11 @@
+import { Info } from "lucide-react";
+
 export function StatusBand() {
   return (
     <section className="status-band">
       <div className="wrap">
         <div className="status-box reveal">
-          <span className="eyebrow">Where Things Stand</span>
+          <span className="eyebrow"><Info size={13} aria-hidden="true" />Where Things Stand</span>
           <p>
             <b>
               Resilience Reimagined Foundation is a nonprofit corporation preparing to apply for

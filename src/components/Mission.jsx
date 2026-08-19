@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 const promises = [
   { from: "reaction", to: "good judgment" },
   { from: "old survival habits", to: "intentional choices" },
@@ -7,8 +9,9 @@ const promises = [
 
 export function Mission() {
   return (
-    <section id="mission">
-      <div className="wrap">
+    <section id="mission" style={{ position: "relative", overflow: "hidden" }}>
+      <img src="/images/IMG_1347.jpeg" alt="" aria-hidden="true" className="mission-texture" />
+      <div className="wrap" style={{ position: "relative", zIndex: 1 }}>
         <span className="eyebrow">Who We Are</span>
         <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "22ch" }}>
           A growing organization working on youth development, family support, and systems reform.
@@ -57,7 +60,7 @@ export function Mission() {
             {promises.map((row) => (
               <div className="promise-row" key={row.from}>
                 <span className="from">{row.from}</span>
-                <span className="arrow">&rarr;</span>
+                <span className="arrow"><ArrowRight size={16} aria-hidden="true" /></span>
                 <span className="to">{row.to}</span>
               </div>
             ))}
