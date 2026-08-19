@@ -1,13 +1,20 @@
 import { LotusDefs } from "./components/LotusIcon.jsx";
 import { Nav } from "./components/Nav.jsx";
 import { Hero } from "./components/Hero.jsx";
-import { QuoteBand } from "./components/QuoteBand.jsx";
+import { Vision } from "./components/Vision.jsx";
 import { Mission } from "./components/Mission.jsx";
-import { Values } from "./components/Values.jsx";
+import { Problem } from "./components/Problem.jsx";
+import { Approach } from "./components/Approach.jsx";
 import { Portfolio } from "./components/Portfolio.jsx";
+import { Values } from "./components/Values.jsx";
+import { FosterCare } from "./components/FosterCare.jsx";
 import { Founder } from "./components/Founder.jsx";
 import { Books } from "./components/Books.jsx";
-import { Audiences } from "./components/Audiences.jsx";
+import { Impact } from "./components/Impact.jsx";
+import { WhyNow } from "./components/WhyNow.jsx";
+import { GetInvolved } from "./components/GetInvolved.jsx";
+import { FoundingSupporters } from "./components/FoundingSupporters.jsx";
+import { CorporatePartners } from "./components/CorporatePartners.jsx";
 import { StatusBand } from "./components/StatusBand.jsx";
 import { FinalCta } from "./components/FinalCta.jsx";
 import { Footer } from "./components/Footer.jsx";
@@ -21,13 +28,20 @@ export default function App() {
       <LotusDefs />
       <Nav />
       <Hero />
-      <QuoteBand />
+      <Vision />
       <Mission />
-      <Values />
+      <Problem />
+      <Approach />
       <Portfolio />
+      <Values />
+      <FosterCare />
       <Founder />
       <Books />
-      <Audiences />
+      <Impact />
+      <WhyNow />
+      <GetInvolved />
+      <FoundingSupporters />
+      <CorporatePartners />
       <StatusBand />
       <FinalCta />
       <Footer />

@@ -1,10 +1,22 @@
-import { Quote } from "lucide-react";
+import { HelpCircle, PenLine } from "lucide-react";
 import { LotusMark } from "./LotusIcon.jsx";
 
-const quotes = [
-  "I am building what I needed earlier: a way to understand what happened without letting it become my identity.",
-  "The goal is not to erase the past. It is to learn from it, without letting it control the future.",
-  "Young people deserve more than a label, a placement, or a crisis response. They deserve the knowledge to understand themselves and the power to shape their future.",
+const questions = [
+  "Why do some experiences become identities?",
+  "Why do protective patterns sometimes continue long after circumstances change?",
+  "What helps a person learn to trust themselves without losing the ability to question what they perceive?",
+  "What happens to identity and connection when families and systems are disrupted?",
+  "And what should we teach young people before they are expected to navigate life's hardest moments?",
+];
+
+const noteParagraphs = [
+  "My hope is not simply that young people survive difficult circumstances.",
+  "I want them to understand that what happened to them, what others decided about them, and what they learned to do in order to survive do not have to determine the rest of their lives.",
+  "We can give young people more than encouragement. We can give them knowledge.",
+  "We can help them understand patterns, relationships, their whole person, the information surrounding them, and the choices available to them.",
+  "We can protect connection without asking them to surrender identity. We can teach them to examine reality without abandoning hope.",
+  "And we can help them turn what they have lived through into wisdom, agency, purpose, and something meaningful for the future.",
+  "That is the future I want Resilience Reimagined to help create.",
 ];
 
 const onStage = [
@@ -34,24 +46,43 @@ export function Founder() {
             </div>
           </div>
           <div className="reveal">
-            <span className="eyebrow">Founder Story</span>
-            <h2>Lived experience, shared with care, not for spectacle.</h2>
+            <span className="eyebrow">Founder</span>
+            <h2>Built from experience. Directed toward what comes next.</h2>
             <p className="founder-bio">
-              Tina Rose is a behavioral scientist, author, speaker, and executive adviser. Her
-              work is shaped by her own experience of foster care, family separation, hardship,
-              and loss. She founded Resilience Reimagined Foundation to give young people the
-              knowledge, judgment, and connection she believes should be taught before a crisis
-              becomes their identity.
+              Resilience Reimagined Foundation was founded by Tina Rose, whose work brings
+              together lived experience, behavioral science, resilience leadership, writing,
+              executive insight, and a longstanding interest in how people and systems respond to
+              adversity and change.
             </p>
-            <div className="founder-quotes">
-              {quotes.map((quote) => (
-                <blockquote key={quote}>
-                  <Quote size={16} aria-hidden="true" />
-                  <span>{quote}</span>
-                </blockquote>
+            <p className="founder-bio">Her connection to this mission is personal.</p>
+            <p className="founder-bio">
+              Experiences with foster care, family separation, adversity, and profound loss raised
+              questions that would eventually become much larger than one person&rsquo;s story:
+            </p>
+
+            <ul className="whatif-list founder-questions">
+              {questions.map((q) => (
+                <li key={q}>
+                  <HelpCircle size={17} aria-hidden="true" />
+                  <span>{q}</span>
+                </li>
               ))}
-            </div>
+            </ul>
+
+            <p className="founder-bio" style={{ marginTop: "1.6rem" }}>
+              Those questions became the foundation for a larger body of work, and ultimately for
+              Resilience Reimagined Foundation. The Foundation exists not to tell one story of
+              adversity, but to help build something useful from what adversity can teach us.
+            </p>
           </div>
+        </div>
+
+        <div className="founder-note reveal">
+          <span className="founder-note-label"><PenLine size={16} aria-hidden="true" />A Note From Our Founder</span>
+          {noteParagraphs.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+          <p className="founder-signature">&mdash; Tina Rose, Founder</p>
         </div>
       </div>
     </section>

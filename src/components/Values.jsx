@@ -1,72 +1,67 @@
-import { Anchor, Brain, Compass, ListChecks, Sparkles, Sprout } from "lucide-react";
+import { Compass, Fingerprint, Flag, HeartHandshake, Scale, Search, Users } from "lucide-react";
 
-const flow = [
+const values = [
   {
-    role: "Philosophy",
-    title: "The Verity Theory",
-    icon: Sparkles,
+    title: "Reality",
+    text: "We seek to understand what is actually happening, not simply what is familiar, convenient, or assumed.",
+    icon: Search,
   },
   {
-    role: "Capacity",
-    title: "Discernment Intelligence",
-    icon: Brain,
+    title: "Empathy",
+    text: "Understanding someone's experience matters. Empathy expands context without eliminating responsibility or distorting reality.",
+    icon: HeartHandshake,
   },
   {
-    role: "Method",
-    title: "The REALITY Method",
-    text: "Seven steps for examining a pattern, from first noticing it to accepting what is actually true.",
-    icon: ListChecks,
+    title: "Authentic Identity",
+    text: "A person's history may influence them, but it does not contain the entirety of who they are.",
+    icon: Fingerprint,
   },
   {
-    role: "Instrument",
-    title: "The Calibrated Compass",
-    text: "A tool for getting back on track when old habits, new information, or changing circumstances throw you off.",
+    title: "Discernment",
+    text: "Feelings, experiences, information, expertise, intuition, data, and technology can all provide useful signals. Wise decisions require examining those signals in context.",
+    icon: Scale,
+  },
+  {
+    title: "Connection",
+    text: "Healthy human connection can change the trajectory of a life. We value relationships that protect dignity, authenticity, appropriate boundaries, and belonging.",
+    icon: Users,
+  },
+  {
+    title: "Agency",
+    text: "Knowledge should expand a person's ability to participate meaningfully in the decisions shaping their life.",
     icon: Compass,
   },
   {
-    role: "Embodied Action",
-    title: "The RECLAIM Model",
-    text: "Seven commitments for acting on what you have learned, from staying grounded to building momentum.",
-    icon: Anchor,
-  },
-  {
-    role: "Outcome",
-    title: "Resilience",
-    text: "The ability to stay grounded, connected, and focused on what matters, even through hardship and change.",
-    icon: Sprout,
+    title: "Purpose",
+    text: "Resilience is not complete when someone simply survives. Experience can become wisdom, wisdom can become action, and action can become contribution.",
+    icon: Flag,
   },
 ];
 
 export function Values() {
   return (
-    <section
-      id="values"
-      style={{ background: "var(--surface-soft)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}
-    >
+    <section id="values">
       <div className="wrap">
-        <span className="eyebrow">THE FRAMEWORK</span>
+        <span className="eyebrow">Values</span>
         <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "26ch" }}>
-          A framework you can follow step by step, not just a slogan.
+          How we work matters as much as what we build.
         </h2>
         <p className="lede" style={{ marginTop: "1.2rem" }}>
-          Philosophy becomes capacity, then method, then a practical tool, then action, and
-          finally an outcome.
+          Our work is grounded in principles that protect dignity, truth, agency, connection,
+          responsibility, and possibility.
         </p>
 
-        <div className="flow-scroll reveal">
-          <div className="flow">
-            {flow.map((node) => {
-              const Icon = node.icon;
-              return (
-                <div className="flow-node" key={node.title}>
-                  <span className="fn-icon"><Icon size={18} aria-hidden="true" /></span>
-                  <span className="fn-role">{node.role}</span>
-                  <h4>{node.title}</h4>
-                  {node.text && <p>{node.text}</p>}
-                </div>
-              );
-            })}
-          </div>
+        <div className="value-grid reveal">
+          {values.map((value) => {
+            const Icon = value.icon;
+            return (
+              <div className="value-card" key={value.title}>
+                <span className="value-icon"><Icon size={18} aria-hidden="true" /></span>
+                <h4>{value.title}</h4>
+                <p>{value.text}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

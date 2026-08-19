@@ -1,10 +1,25 @@
-import { ArrowRight } from "lucide-react";
+import {
+  Compass,
+  Ear,
+  Heart,
+  MessageCircleHeart,
+  Puzzle,
+  Scale,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
+} from "lucide-react";
 
-const promises = [
-  { from: "reaction", to: "good judgment" },
-  { from: "old survival habits", to: "intentional choices" },
-  { from: "isolation", to: "real relationships" },
-  { from: "painful experience", to: "meaningful contribution" },
+const capacities = [
+  { text: "A strong and authentic sense of identity", icon: ShieldCheck },
+  { text: "Greater agency and self-trust", icon: Compass },
+  { text: "Pattern awareness and discernment", icon: Puzzle },
+  { text: "Healthy communication and boundaries", icon: MessageCircleHeart },
+  { text: "Safe and meaningful connection", icon: Heart },
+  { text: "Whole-person wellbeing and self-awareness", icon: Ear },
+  { text: "Responsible decision-making", icon: Scale },
+  { text: "Adaptability and future readiness", icon: TrendingUp },
+  { text: "Purpose, contribution, and hope", icon: Sparkles },
 ];
 
 export function Mission() {
@@ -12,59 +27,53 @@ export function Mission() {
     <section id="mission" style={{ position: "relative", overflow: "hidden" }}>
       <img src="/images/IMG_1347.jpeg" alt="" aria-hidden="true" className="mission-texture" />
       <div className="wrap" style={{ position: "relative", zIndex: 1 }}>
-        <span className="eyebrow">Who We Are</span>
-        <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "22ch" }}>
-          A growing organization working on youth development, family support, and systems reform.
+        <span className="eyebrow">Mission</span>
+        <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "26ch" }}>
+          Preparing young people for life, not only for crisis.
         </h2>
         <p className="lede" style={{ marginTop: "1.2rem" }}>
-          Resilience Reimagined Foundation turns lived experience and behavioral science into
-          real programs: education, tools, and partnerships that produce measurable outcomes for
-          young people, families, and the institutions that serve them.
+          Our mission is to transform how young people are educated, supported, and prepared for
+          the realities of life. We bring together whole-person education, behavioral science,
+          lived experience, relationship-centered practices, responsible technology, research, and
+          practical tools to strengthen the capacities that help people navigate adversity and
+          change.
         </p>
 
-        <div className="thesis-grid reveal" style={{ marginTop: "3.5rem" }}>
-          <div className="thesis-card problem">
-            <h3>The problem</h3>
-            <p>
-              Young people make major life decisions based on how their experiences, past
-              relationships, trauma, biology, and culture, shape their choices. Meanwhile,
-              institutions tend to track removals, placements, and paperwork compliance, and
-              lose sight of identity and connection to a community.
-            </p>
+        <div className="reveal" style={{ marginTop: "3rem" }}>
+          <p className="capacity-intro">Our work focuses on helping young people develop:</p>
+          <div className="capacity-grid">
+            {capacities.map((cap, i) => {
+              const Icon = cap.icon;
+              return (
+                <div className="capacity-item" key={cap.text} data-accent={i % 3}>
+                  <Icon size={17} aria-hidden="true" />
+                  <span>{cap.text}</span>
+                </div>
+              );
+            })}
           </div>
-          <div className="thesis-card answer">
-            <h3>Our answer</h3>
-            <p>
-              We help them protect their identity. We prepare people earlier, teach good
-              decision making before asking for compliance, and measure whether lives actually
-              get more stable, connected, and self directed over time.
-            </p>
-          </div>
+          <p className="lede" style={{ marginTop: "2rem" }}>
+            We also work with the adults and institutions responsible for young people&rsquo;s
+            development, because lasting change cannot rest on the young person alone.
+          </p>
         </div>
 
-        <div className="reveal">
-          <p
-            className="lede"
-            style={{
-              marginTop: "3.5rem",
-              color: "var(--ink)",
-              fontFamily: "var(--font-display)",
-              fontSize: "1.35rem",
-              lineHeight: 1.55,
-              maxWidth: "52ch",
-            }}
-          >
-            Here is what we work toward, together:
+        <div className="vision-panel reveal">
+          <span className="eyebrow">Our Vision</span>
+          <p>
+            We envision a future in which young people are not permanently defined by adversity,
+            placement, diagnosis, circumstance, or decisions made about them.
           </p>
-          <div className="promise-list">
-            {promises.map((row) => (
-              <div className="promise-row" key={row.from}>
-                <span className="from">{row.from}</span>
-                <span className="arrow"><ArrowRight size={16} aria-hidden="true" /></span>
-                <span className="to">{row.to}</span>
-              </div>
-            ))}
-          </div>
+          <p>
+            A future where they have the knowledge and support to understand themselves, build
+            meaningful relationships, make informed choices, adapt when life changes, and
+            participate in shaping their own futures.
+          </p>
+          <p>
+            And a future where the systems entrusted with young people&rsquo;s lives measure
+            success not simply by processes completed, but by the lives young people are able to
+            build.
+          </p>
         </div>
       </div>
     </section>

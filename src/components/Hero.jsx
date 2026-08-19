@@ -1,4 +1,4 @@
-import { CheckCircle2, HeartHandshake, Users } from "lucide-react";
+import { ArrowRight, CheckCircle2, HeartHandshake } from "lucide-react";
 import { EmberCanvas } from "./EmberCanvas.jsx";
 
 export function Hero() {
@@ -15,16 +15,18 @@ export function Hero() {
         <polygon points="200,80 214,200 200,320 186,200" fill="#EFE9FF"></polygon>
       </svg>
       <div className="wrap hero-inner">
-        <span className="eyebrow">Youth development, foster care reform, education reform</span>
-        <h1>We turn hard experience into wisdom, and help young people build a future on purpose.</h1>
+        <span className="eyebrow">Resilience Is More Than Surviving What Happened</span>
+        <h1>We are reimagining how young people are prepared for life, and how the systems around them help them thrive.</h1>
         <p className="sub">
-          We build education programs, support services, and policy work that help young people
-          in foster care and beyond understand who they are, stay connected to the people who
-          matter, and make grounded decisions about their future.
+          Resilience Reimagined Foundation advances whole-person education, youth development,
+          authentic identity, meaningful connection, and better decision-making. We create programs,
+          tools, research, and partnerships designed to help young people understand what has shaped
+          them without being defined by it, and build lives of agency, connection, purpose, and
+          possibility.
         </p>
         <div className="hero-ctas">
           <a className="btn btn-primary" href="#partner"><HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter</a>
-          <a className="btn btn-ghost" href="#partner"><Users size={17} aria-hidden="true" />Partner With Us</a>
+          <a className="btn btn-ghost" href="#portfolio">Explore Our Work<ArrowRight size={17} aria-hidden="true" /></a>
         </div>
         <div className="status-row">
           <span><CheckCircle2 size={14} aria-hidden="true" />Nonprofit corporation formed</span>
