@@ -44,18 +44,20 @@ export function Books() {
                   <img src={book.cover} alt={`${book.title} book cover`} className="book-cover" />
                   <span className="book-shine" aria-hidden="true" />
                 </div>
-                <div>
-                  <span className="book-tag"><Icon size={13} aria-hidden="true" />Book</span>
-                  <h4>{book.title}</h4>
-                  <p>{book.subtitle}</p>
-                </div>
-                <div
-                  className="book-reveal"
-                  style={book.backdrop ? { backgroundImage: `url(${book.backdrop})` } : undefined}
-                >
-                  <div className="book-reveal-scrim">
-                    <Quote size={22} aria-hidden="true" className="book-reveal-quote-icon" />
-                    <p>{book.quote}</p>
+                <div className="book-text-wrap">
+                  <div className="book-text">
+                    <span className="book-tag"><Icon size={13} aria-hidden="true" />Book</span>
+                    <h4>{book.title}</h4>
+                    <p>{book.subtitle}</p>
+                  </div>
+                  <div
+                    className="book-reveal"
+                    style={book.backdrop ? { "--book-backdrop": `url(${book.backdrop})` } : undefined}
+                  >
+                    <div className="book-reveal-scrim">
+                      <Quote size={20} aria-hidden="true" className="book-reveal-quote-icon" />
+                      <p>{book.quote}</p>
+                    </div>
                   </div>
                 </div>
               </div>
