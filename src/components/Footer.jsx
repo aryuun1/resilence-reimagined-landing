@@ -25,6 +25,7 @@ export function Footer() {
           <li><a href="#values">Values</a></li>
           <li><a href="#founder">Founder</a></li>
           <li><a href="#partner">Get Involved</a></li>
+          <li><a href="https://funnel.resiliencereimaginedfoundation.com/contact-us-page" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
         </ul>
       </div>
     </footer>
