@@ -1,4 +1,7 @@
 import { HeartHandshake, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const DONATE_URL = "https://funnel.resiliencereimaginedfoundation.com/donate-page";
 
 const imagineLines = [
   "With a stronger understanding of who they are.",
@@ -24,8 +27,8 @@ export function FinalCta() {
 
         <h3 className="final-cta-subhead">Be part of what comes next.</h3>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#partner"><HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter</a>
-          <a className="btn btn-ghost" href="#corporate-partners"><Users size={17} aria-hidden="true" />Partner With Us</a>
+          <a className="btn btn-primary" href={DONATE_URL} target="_blank" rel="noopener noreferrer"><HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter</a>
+          <Link className="btn btn-ghost" to="/get-involved"><Users size={17} aria-hidden="true" />Partner With Us</Link>
         </div>
       </div>
     </section>

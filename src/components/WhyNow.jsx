@@ -11,17 +11,13 @@ export function WhyNow() {
         <div className="vision-body">
           <p>
             Young people are growing up amid unprecedented access to information, artificial
-            intelligence, social pressure, uncertainty, disrupted relationships, and rapidly
-            changing expectations about work and adulthood.
+            intelligence, social pressure, and rapidly changing expectations about work and
+            adulthood. <strong>Knowing more information is not enough.</strong>
           </p>
-          <p><strong>Knowing more information is not enough.</strong></p>
           <p>
-            The ability to determine what deserves trust, recognize patterns, understand
-            influence, evaluate competing information, maintain authentic identity, build
-            meaningful relationships, and make responsible choices is becoming increasingly
-            important.
+            The ability to recognize patterns, evaluate competing information, maintain authentic
+            identity, and make responsible choices is a capacity worth developing intentionally.
           </p>
-          <p>We believe these are capacities worth developing intentionally.</p>
         </div>
         <p className="vision-closing">And we believe the time to begin is before the next crisis.</p>
       </div>

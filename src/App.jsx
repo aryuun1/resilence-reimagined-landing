@@ -1,50 +1,26 @@
-import { LotusDefs } from "./components/LotusIcon.jsx";
-import { Nav } from "./components/Nav.jsx";
-import { Hero } from "./components/Hero.jsx";
-import { Vision } from "./components/Vision.jsx";
-import { Mission } from "./components/Mission.jsx";
-import { Problem } from "./components/Problem.jsx";
-import { Approach } from "./components/Approach.jsx";
-import { Portfolio } from "./components/Portfolio.jsx";
-import { Values } from "./components/Values.jsx";
-import { FosterCare } from "./components/FosterCare.jsx";
-import { Founder } from "./components/Founder.jsx";
-import { Books } from "./components/Books.jsx";
-import { Impact } from "./components/Impact.jsx";
-import { WhyNow } from "./components/WhyNow.jsx";
-import { GetInvolved } from "./components/GetInvolved.jsx";
-import { FoundingSupporters } from "./components/FoundingSupporters.jsx";
-import { CorporatePartners } from "./components/CorporatePartners.jsx";
-import { StatusBand } from "./components/StatusBand.jsx";
-import { FinalCta } from "./components/FinalCta.jsx";
-import { Footer } from "./components/Footer.jsx";
-import { useScrollReveal } from "./hooks/useScrollReveal.js";
+import { Routes, Route } from "react-router-dom";
+import { Layout } from "./Layout.jsx";
+import { Home } from "./pages/Home.jsx";
+import { About } from "./pages/About.jsx";
+import { Framework } from "./pages/Framework.jsx";
+import { Work } from "./pages/Work.jsx";
+import { FounderPage } from "./pages/FounderPage.jsx";
+import { GetInvolvedPage } from "./pages/GetInvolvedPage.jsx";
+import { Contact } from "./pages/Contact.jsx";
 
 export default function App() {
-  useScrollReveal();
-
   return (
-    <>
-      <LotusDefs />
-      <Nav />
-      <Hero />
-      <Vision />
-      <Mission />
-      <Problem />
-      <Approach />
-      <Portfolio />
-      <Values />
-      <FosterCare />
-      <Founder />
-      <Books />
-      <Impact />
-      <WhyNow />
-      <GetInvolved />
-      <FoundingSupporters />
-      <CorporatePartners />
-      <StatusBand />
-      <FinalCta />
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/approach" element={<Framework />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/founder" element={<FounderPage />} />
+        <Route path="/get-involved" element={<GetInvolvedPage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Home />} />
+      </Route>
+    </Routes>
   );
 }

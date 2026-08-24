@@ -3,10 +3,7 @@ import { MessageCircleQuestion } from "lucide-react";
 const questions = [
   "Does the young person know who they are?",
   "Do they have safe and meaningful relationships?",
-  "Have important connections been preserved where appropriate?",
-  "Do they understand how their experiences may be influencing their choices?",
   "Are they prepared to navigate adulthood?",
-  "Do they have the knowledge and confidence to make decisions?",
   "Do they have people they can call?",
   "Do they have a future they can imagine themselves creating?",
 ];

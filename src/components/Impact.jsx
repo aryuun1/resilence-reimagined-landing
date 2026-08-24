@@ -1,18 +1,14 @@
 import {
-  ArrowRight, Building2, Flag, GraduationCap, Heart, Puzzle, Scale, ShieldCheck, Sparkles, TrendingUp,
+  ArrowRight, Building2, GraduationCap, Heart, Scale, ShieldCheck,
 } from "lucide-react";
 
 const CONTACT_URL = "https://funnel.resiliencereimaginedfoundation.com/contact-us-page";
 
 const areas = [
-  { text: "Pattern recognition and resolution", icon: Puzzle },
-  { text: "Identity and agency", icon: ShieldCheck },
+  { text: "Pattern recognition and resolution", icon: ShieldCheck },
   { text: "Decision quality and discernment", icon: Scale },
   { text: "Relationship continuity", icon: Heart },
-  { text: "Whole-person wellbeing", icon: Sparkles },
   { text: "Educational engagement and future readiness", icon: GraduationCap },
-  { text: "Transition into early adulthood", icon: TrendingUp },
-  { text: "Purposeful contribution", icon: Flag },
   { text: "Institutional practices and decision-making", icon: Building2 },
 ];
 

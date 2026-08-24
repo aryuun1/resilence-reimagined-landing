@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const EMBER_COUNT = 46;
+const EMBER_COUNT = 32;
 
 export function EmberCanvas() {
   const canvasRef = useRef(null);
@@ -34,7 +34,7 @@ export function EmberCanvas() {
         r: 0.6 + Math.random() * 2.1,
         speed: 0.15 + Math.random() * 0.5,
         drift: (Math.random() - 0.5) * 0.4,
-        alpha: 0.15 + Math.random() * 0.55,
+        alpha: 0.12 + Math.random() * 0.4,
         flicker: Math.random() * Math.PI * 2,
       };
     }
@@ -57,14 +57,14 @@ export function EmberCanvas() {
         const a = e.alpha * (0.6 + 0.4 * Math.sin(e.flicker));
 
         const glow = ctx.createRadialGradient(e.x, e.y, 0, e.x, e.y, e.r * 5);
-        glow.addColorStop(0, "rgba(240,177,71," + a + ")");
-        glow.addColorStop(1, "rgba(240,177,71,0)");
+        glow.addColorStop(0, "rgba(232,184,75," + a + ")");
+        glow.addColorStop(1, "rgba(232,184,75,0)");
         ctx.fillStyle = glow;
         ctx.beginPath();
         ctx.arc(e.x, e.y, e.r * 5, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.fillStyle = "rgba(250,235,210," + Math.min(a + 0.25, 1) + ")";
+        ctx.fillStyle = "rgba(240,113,79," + Math.min(a + 0.3, 1) + ")";
         ctx.beginPath();
         ctx.arc(e.x, e.y, e.r, 0, Math.PI * 2);
         ctx.fill();

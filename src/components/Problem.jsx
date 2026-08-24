@@ -1,15 +1,13 @@
 import { HelpCircle } from "lucide-react";
 
 const influences = [
-  "Stress", "Relationships", "Family experiences", "Trauma", "Physical wellbeing",
-  "Emotion", "Culture", "Technology", "Beliefs", "Environment", "Power", "Belonging",
+  "Stress", "Relationships", "Family experiences", "Trauma", "Technology", "Belonging",
 ];
 
 const whatIfs = [
   "What if we taught them how to recognize patterns before those patterns became repeated outcomes?",
   "What if identity was protected rather than reduced to a label?",
   "What if connection was treated as essential to development?",
-  "What if young people learned how to question information, including information from technology, without losing trust in themselves?",
   "What if the measure of a system was not simply whether a procedure was completed, but whether a human being became more capable of building a meaningful life?",
 ];
 

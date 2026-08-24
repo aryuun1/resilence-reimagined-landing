@@ -10,14 +10,8 @@ export function StatusBand() {
         </h2>
         <p className="lede" style={{ marginTop: "1.2rem" }}>
           Resilience Reimagined Foundation believes trust should be earned through transparency,
-          responsible governance, careful stewardship, and honest communication about what has,
-          and has not, yet been demonstrated.
-        </p>
-        <p className="lede" style={{ marginTop: "1rem" }}>
-          Our programs and research are being developed and expanded with attention to
-          safeguarding, privacy, evidence, responsible technology, human accountability, and
-          meaningful evaluation. We will distinguish emerging ideas from established evidence and
-          developmental measures from validated ones.
+          responsible governance, and honest communication about what has, and has not, yet been
+          demonstrated.
         </p>
         <p className="transparency-pledge">Growth matters. How we grow matters too.</p>
 

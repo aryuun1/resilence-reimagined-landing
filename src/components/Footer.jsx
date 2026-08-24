@@ -1,33 +1,21 @@
+import { Link } from "react-router-dom";
 import { LotusMark } from "./LotusIcon.jsx";
-
-const CONTACT_URL = "https://funnel.resiliencereimaginedfoundation.com/contact-us-page";
 
 const columns = [
   {
     heading: "Explore",
     links: [
-      { label: "About", href: "#mission" },
-      { label: "Our Work", href: "#portfolio" },
-      { label: "INDIGLOW", href: "#indiglow" },
-      { label: "Pattern to Purpose", href: "#p2p" },
-      { label: "Research & Learning", href: "#impact" },
-      { label: "Founder", href: "#founder" },
+      { label: "About", to: "/about" },
+      { label: "Our Framework", to: "/approach" },
+      { label: "Our Work", to: "/work" },
+      { label: "Founder", to: "/founder" },
     ],
   },
   {
     heading: "Get Involved",
     links: [
-      { label: "Become a Founding Supporter", href: "#partner" },
-      { label: "Partner With Us", href: "#corporate-partners" },
-      { label: "Contact Us", href: CONTACT_URL, external: true },
-    ],
-  },
-  {
-    heading: "Connect",
-    links: [
-      { label: "News & Updates", soon: true },
-      { label: "Media Inquiries", soon: true },
-      { label: "General Contact", href: CONTACT_URL, external: true },
+      { label: "Ways to Help", to: "/get-involved" },
+      { label: "Contact Us", to: "/contact" },
     ],
   },
 ];
@@ -37,10 +25,10 @@ export function Footer() {
     <footer>
       <div className="foot-inner">
         <div className="foot-brand">
-          <a className="mark" href="#top">
+          <Link className="mark" to="/">
             <LotusMark size={22} />
             <span className="mark-word">Resilience Reimagined Foundation</span>
-          </a>
+          </Link>
           <p className="foot-tagline">
             Whole-person youth development · Identity &amp; relationship continuity · Education ·
             Research · Systems change
@@ -54,13 +42,7 @@ export function Footer() {
               <ul>
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    {link.soon ? (
-                      <span className="foot-link-soon">{link.label}</span>
-                    ) : (
-                      <a href={link.href} target={link.external ? "_blank" : undefined} rel={link.external ? "noopener noreferrer" : undefined}>
-                        {link.label}
-                      </a>
-                    )}
+                    <Link to={link.to}>{link.label}</Link>
                   </li>
                 ))}
               </ul>
