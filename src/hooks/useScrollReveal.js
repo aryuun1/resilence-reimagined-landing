@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-export function useScrollReveal() {
+export function useScrollReveal(dep) {
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const els = document.querySelectorAll(".reveal");
+    const els = document.querySelectorAll(".reveal:not(.is-visible)");
 
     if ("IntersectionObserver" in window && !reduceMotion) {
       const io = new IntersectionObserver(
@@ -22,5 +22,5 @@ export function useScrollReveal() {
     }
 
     els.forEach((el) => el.classList.add("is-visible"));
-  }, []);
+  }, [dep]);
 }

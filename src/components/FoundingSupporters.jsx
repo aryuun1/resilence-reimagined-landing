@@ -1,16 +1,14 @@
 import { HeartHandshake, MessageCircle } from "lucide-react";
 
 const CONTACT_URL = "https://funnel.resiliencereimaginedfoundation.com/contact-us-page";
+const DONATE_URL = "https://funnel.resiliencereimaginedfoundation.com/donate-page";
 
 const welcomeList = [
   "Individual philanthropists",
   "Foundations and grantmakers",
   "Corporate partners",
-  "Family foundations",
-  "Schools and educational institutions",
-  "Child-welfare and youth-serving organizations",
+  "Schools and youth-serving organizations",
   "Researchers and academic partners",
-  "Community organizations",
   "Mission-aligned professionals and advisers",
 ];
 
@@ -37,7 +35,7 @@ export function FoundingSupporters() {
         </div>
 
         <div className="hero-ctas" style={{ marginTop: "2.6rem" }}>
-          <a className="btn btn-primary" href={CONTACT_URL} target="_blank" rel="noopener noreferrer">
+          <a className="btn btn-primary" href={DONATE_URL} target="_blank" rel="noopener noreferrer">
             <HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter
           </a>
           <a className="btn btn-ghost" href={CONTACT_URL} target="_blank" rel="noopener noreferrer">

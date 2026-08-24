@@ -3,19 +3,14 @@ import { LotusMark } from "./LotusIcon.jsx";
 
 const questions = [
   "Why do some experiences become identities?",
-  "Why do protective patterns sometimes continue long after circumstances change?",
-  "What helps a person learn to trust themselves without losing the ability to question what they perceive?",
   "What happens to identity and connection when families and systems are disrupted?",
   "And what should we teach young people before they are expected to navigate life's hardest moments?",
 ];
 
 const noteParagraphs = [
-  "My hope is not simply that young people survive difficult circumstances.",
-  "I want them to understand that what happened to them, what others decided about them, and what they learned to do in order to survive do not have to determine the rest of their lives.",
-  "We can give young people more than encouragement. We can give them knowledge.",
-  "We can help them understand patterns, relationships, their whole person, the information surrounding them, and the choices available to them.",
-  "We can protect connection without asking them to surrender identity. We can teach them to examine reality without abandoning hope.",
-  "And we can help them turn what they have lived through into wisdom, agency, purpose, and something meaningful for the future.",
+  "My hope is not simply that young people survive difficult circumstances. I want them to understand that what happened to them, and what they learned to do in order to survive, do not have to determine the rest of their lives.",
+  "We can give young people more than encouragement. We can give them knowledge, help them understand their patterns, relationships, and the choices available to them.",
+  "We can protect connection without asking them to surrender identity, and help them turn what they have lived through into wisdom, agency, and purpose.",
   "That is the future I want Resilience Reimagined to help create.",
 ];
 

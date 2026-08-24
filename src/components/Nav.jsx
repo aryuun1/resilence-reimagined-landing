@@ -1,24 +1,38 @@
 import { ArrowRight } from "lucide-react";
+import { NavLink, Link } from "react-router-dom";
 import { LotusMark } from "./LotusIcon.jsx";
+
+const DONATE_URL = "https://funnel.resiliencereimaginedfoundation.com/donate-page";
+
+const links = [
+  { label: "About", to: "/about" },
+  { label: "Our Framework", to: "/approach" },
+  { label: "Our Work", to: "/work" },
+  { label: "Founder", to: "/founder" },
+  { label: "Get Involved", to: "/get-involved" },
+  { label: "Contact", to: "/contact" },
+];
 
 export function Nav() {
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <a className="mark" href="#top">
+        <Link className="mark" to="/">
           <LotusMark />
           <span className="mark-word">Resilience Reimagined</span>
-        </a>
+        </Link>
         <ul className="navlinks">
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#values">Values</a></li>
-          <li><a href="#founder">Founder</a></li>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#partner">Get Involved</a></li>
-          <li><a href="https://funnel.resiliencereimaginedfoundation.com/contact-us-page" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+          {links.map((link) => (
+            <li key={link.to}>
+              <NavLink to={link.to} className={({ isActive }) => (isActive ? "is-active" : undefined)}>
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
-        <a className="btn btn-primary btn-sm" href="#partner">Become a Founding Supporter<ArrowRight size={15} aria-hidden="true" /></a>
+        <a className="btn btn-primary btn-sm" href={DONATE_URL} target="_blank" rel="noopener noreferrer">
+          Become a Founding Supporter<ArrowRight size={15} aria-hidden="true" />
+        </a>
       </div>
     </nav>
   );
