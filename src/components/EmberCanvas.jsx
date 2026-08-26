@@ -64,7 +64,7 @@ export function EmberCanvas() {
         ctx.arc(e.x, e.y, e.r * 5, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.fillStyle = "rgba(240,113,79," + Math.min(a + 0.3, 1) + ")";
+        ctx.fillStyle = "rgba(250,0,63," + Math.min(a + 0.3, 1) + ")";
         ctx.beginPath();
         ctx.arc(e.x, e.y, e.r, 0, Math.PI * 2);
         ctx.fill();

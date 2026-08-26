@@ -1,21 +1,20 @@
-import { Brain, Eye, GitBranch, Heart, HelpCircle, RefreshCw, Sparkles, Zap } from "lucide-react";
+import { Brain, Eye, GitBranch, Heart, HelpCircle, RefreshCw, Zap } from "lucide-react";
 
 const steps = [
-  { title: "Recognize", text: "What is happening.", icon: Eye },
-  { title: "Understand", text: "The influences and patterns behind it.", icon: Brain },
-  { title: "Question", text: "Assumptions and examine reality.", icon: HelpCircle },
-  { title: "Choose", text: "Rather than simply react.", icon: GitBranch },
-  { title: "Recalibrate", text: "When circumstances or information change.", icon: RefreshCw },
-  { title: "Connect", text: "Without abandoning authentic identity.", icon: Heart },
-  { title: "Act", text: "With greater alignment and responsibility.", icon: Zap },
-  { title: "Transform", text: "Experience into purposeful contribution.", icon: Sparkles },
+  { title: "Recognize", text: "Patterns as they take shape.", icon: Eye },
+  { title: "Examine", text: "Objectively, before assuming.", icon: Brain },
+  { title: "Acknowledge", text: "Influence, and where it comes from.", icon: HelpCircle },
+  { title: "Liberate", text: "Intentionally from what no longer serves.", icon: GitBranch },
+  { title: "Integrate", text: "Wisdom into the way forward.", icon: RefreshCw },
+  { title: "Trust", text: "Discernment over certainty.", icon: Heart },
+  { title: "Yield", text: "To truth, even when it is inconvenient.", icon: Zap },
 ];
 
 export function Approach() {
   return (
     <section id="approach" style={{ background: "var(--surface-soft)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
       <div className="wrap">
-        <span className="eyebrow">Our Approach</span>
+        <span className="eyebrow">Our Approach: REALITY</span>
         <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "26ch" }}>
           From experience to agency.
         </h2>
@@ -23,8 +22,9 @@ export function Approach() {
           We believe experience can become a source of wisdom without becoming a permanent
           identity. Patterns that develop during difficult circumstances may once have served an
           important purpose, and understanding where they came from matters. But understanding a
-          pattern is not the same as being governed by it forever. Our work helps people develop
-          the capacity to:
+          pattern is not the same as being governed by it forever. The Foundation develops
+          Discernment Intelligence as a human capacity for young people, and for the adults and
+          systems around them, using REALITY as a working method:
         </p>
 
         <div className="flow-scroll reveal">
@@ -43,8 +43,8 @@ export function Approach() {
         </div>
 
         <p className="lede" style={{ marginTop: "3rem", maxWidth: "56ch" }}>
-          This is resilience as a living capacity, not a label someone earns because they survived
-          something difficult.
+          Discernment is the disciplined pause between signal and verdict. This is resilience as a
+          living capacity, not a label someone earns because they survived something difficult.
         </p>
       </div>
     </section>

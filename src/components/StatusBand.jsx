@@ -17,16 +17,13 @@ export function StatusBand() {
 
         <div className="status-box reveal">
           <p>
-            <b>
-              Resilience Reimagined Foundation is a nonprofit corporation preparing to apply for
-              recognition of exemption under Section 501(c)(3) of the Internal Revenue Code.
-              Federal tax exempt status has not been recognized.
-            </b>
+            <b>Resilience Reimagined Foundation is a nonprofit corporation.</b>
           </p>
           <p>
-            The Foundation and its programs are real, and still being built, tested, and
-            expanded. Every claim on this page reflects where things actually stand today, not a
-            finished scale or proven impact we have not demonstrated yet.
+            We&rsquo;re developing programs, curricula, research, and educational tools. Prospective
+            partners and pilot conversations are described only in general terms until names,
+            scopes, and agreements are confirmed. We won&rsquo;t imply scaled delivery, validated
+            outcomes, or completed partnerships before we can document them.
           </p>
         </div>
       </div>

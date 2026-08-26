@@ -1,11 +1,11 @@
 import { MessageCircleQuestion } from "lucide-react";
 
 const questions = [
-  "Does the young person know who they are?",
-  "Do they have safe and meaningful relationships?",
-  "Are they prepared to navigate adulthood?",
-  "Do they have people they can call?",
-  "Do they have a future they can imagine themselves creating?",
+  "What does the public misunderstand about young people who experience foster care?",
+  "What concerns you most about placement changes, school changes, separation, or aging out?",
+  "What should every young person navigating foster care hear from an adult?",
+  "What should adults and systems stop assuming about young people in care?",
+  "What should continue after a young person exits formal care?",
 ];
 
 export function FosterCare() {
@@ -17,14 +17,14 @@ export function FosterCare() {
           A young person is more than a placement.
         </h2>
         <p className="lede" style={{ marginTop: "1.2rem" }}>
-          Safety matters. So do identity, education, relationships, agency, wellbeing, belonging,
-          purpose, and what happens after formal support ends. Resilience Reimagined Foundation is
-          committed to advancing a more whole-person approach to foster care and youth-serving
-          systems.
+          Foster care is personal to our founder, but the mission is larger: strengthen families
+          before crisis when safety permits, support children and families honestly when care is
+          necessary, preserve safe relationships and identity, and continue preparation and
+          connection into adulthood.
         </p>
 
         <p className="capacity-intro" style={{ marginTop: "2.8rem" }}>
-          We are particularly interested in questions that continue beyond placement:
+          Our work is guided by questions that continue beyond placement:
         </p>
         <div className="question-grid reveal">
           {questions.map((q) => (
@@ -36,7 +36,7 @@ export function FosterCare() {
         </div>
 
         <p className="problem-closing">
-          Aging out of a system should not mean aging out of connection, guidance, or possibility.
+          Aging out should mark a legal transition, not the expiration of human connection.
         </p>
       </div>
     </section>

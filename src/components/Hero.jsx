@@ -1,8 +1,6 @@
-import { ArrowRight, CheckCircle2, HeartHandshake } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { EmberCanvas } from "./EmberCanvas.jsx";
-
-const DONATE_URL = "https://funnel.resiliencereimaginedfoundation.com/donate-page";
 
 export function Hero() {
   return (
@@ -18,23 +16,16 @@ export function Hero() {
         <polygon points="200,80 214,200 200,320 186,200" fill="#C9AEEF"></polygon>
       </svg>
       <div className="wrap hero-inner">
-        <span className="eyebrow">Resilience Is More Than Surviving What Happened</span>
-        <h1>We are reimagining how young people are prepared for life, and how the systems around them help them thrive.</h1>
+        <span className="eyebrow">Resilience Reimagined</span>
+        <h1>Resilience can become more than survival.</h1>
         <p className="sub">
-          Resilience Reimagined Foundation advances whole-person education, youth development,
-          authentic identity, meaningful connection, and better decision-making. We create programs,
-          tools, research, and partnerships designed to help young people understand what has shaped
-          them without being defined by it, and build lives of agency, connection, purpose, and
-          possibility.
+          Resilience Reimagined is building tools, learning experiences, and partnerships to help
+          young people better understand themselves, navigate life&rsquo;s challenges, stay
+          connected to who they are, and move toward a future with purpose.
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href={DONATE_URL} target="_blank" rel="noopener noreferrer"><HeartHandshake size={17} aria-hidden="true" />Become a Founding Supporter</a>
+          <Link className="btn btn-primary" to="/get-involved">Get Involved<ArrowRight size={17} aria-hidden="true" /></Link>
           <Link className="btn btn-ghost" to="/work">Explore Our Work<ArrowRight size={17} aria-hidden="true" /></Link>
-        </div>
-        <div className="status-row">
-          <span><CheckCircle2 size={14} aria-hidden="true" />Nonprofit corporation formed</span>
-          <span><CheckCircle2 size={14} aria-hidden="true" />Preparing to apply for Section 501(c)(3) recognition</span>
-          <span><CheckCircle2 size={14} aria-hidden="true" />Portfolio established and actively expanding</span>
         </div>
       </div>
     </header>

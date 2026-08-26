@@ -1,39 +1,29 @@
-import { Compass, Fingerprint, Flag, HeartHandshake, Scale, Search, Users } from "lucide-react";
+import { Compass, Fingerprint, Flag, Search, Users } from "lucide-react";
 
 const values = [
   {
-    title: "Reality",
-    text: "We seek to understand what is actually happening, not simply what is familiar, convenient, or assumed.",
-    icon: Search,
-  },
-  {
-    title: "Empathy",
-    text: "Understanding someone's experience matters. Empathy expands context without eliminating responsibility or distorting reality.",
-    icon: HeartHandshake,
-  },
-  {
-    title: "Authentic Identity",
-    text: "A person's history may influence them, but it does not contain the entirety of who they are.",
+    title: "Identity matters.",
+    text: "A circumstance, label, diagnosis, placement, mistake, or difficult chapter should never become the definition of a person.",
     icon: Fingerprint,
   },
   {
-    title: "Discernment",
-    text: "Feelings, experiences, information, expertise, intuition, data, and technology can all provide useful signals. Wise decisions require examining those signals in context.",
-    icon: Scale,
-  },
-  {
-    title: "Connection",
-    text: "Healthy human connection can change the trajectory of a life. We value relationships that protect dignity, authenticity, appropriate boundaries, and belonging.",
+    title: "Connection matters.",
+    text: "Healthy relationships can be an important part of resilience.",
     icon: Users,
   },
   {
-    title: "Agency",
-    text: "Knowledge should expand a person's ability to participate meaningfully in the decisions shaping their life.",
+    title: "Understanding matters.",
+    text: "Recognizing what influences our thoughts, reactions, and choices can create room for different choices.",
+    icon: Search,
+  },
+  {
+    title: "Agency matters.",
+    text: "Young people deserve opportunities to participate meaningfully in decisions about their lives.",
     icon: Compass,
   },
   {
-    title: "Purpose",
-    text: "Resilience is not complete when someone simply survives. Experience can become wisdom, wisdom can become action, and action can become contribution.",
+    title: "Purpose matters.",
+    text: "Resilience isn't only about getting through something. It's also about what we choose to build afterward.",
     icon: Flag,
   },
 ];
@@ -42,16 +32,9 @@ export function Values() {
   return (
     <section id="values">
       <div className="wrap">
-        <span className="eyebrow">Values</span>
-        <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "26ch" }}>
-          How we work matters as much as what we build.
-        </h2>
-        <p className="lede" style={{ marginTop: "1.2rem" }}>
-          Our work is grounded in principles that protect dignity, truth, agency, connection,
-          responsibility, and possibility.
-        </p>
+        <span className="eyebrow">What We Believe</span>
 
-        <div className="value-grid reveal">
+        <div className="value-grid reveal" style={{ marginTop: "2rem" }}>
           {values.map((value) => {
             const Icon = value.icon;
             return (
