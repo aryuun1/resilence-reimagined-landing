@@ -2,16 +2,16 @@ import { HelpCircle, PenLine } from "lucide-react";
 import { LotusMark } from "./LotusIcon.jsx";
 
 const questions = [
-  "Why do some experiences become identities?",
-  "What happens to identity and connection when families and systems are disrupted?",
-  "And what should we teach young people before they are expected to navigate life's hardest moments?",
+  "What if the life a person is living is being shaped by a story they never consciously chose?",
+  "What knowledge would help them see the pattern, test the story, and reclaim authorship of what comes next?",
+  "What if the institutions meant to help are also repeating a pattern they have mistaken for success?",
 ];
 
 const noteParagraphs = [
-  "My hope is not simply that young people survive difficult circumstances. I want them to understand that what happened to them, and what they learned to do in order to survive, do not have to determine the rest of their lives.",
-  "We can give young people more than encouragement. We can give them knowledge, help them understand their patterns, relationships, and the choices available to them.",
-  "We can protect connection without asking them to surrender identity, and help them turn what they have lived through into wisdom, agency, and purpose.",
-  "That is the future I want Resilience Reimagined to help create.",
+  "I founded Resilience Reimagined because young people deserve the knowledge, relationships, and whole-person capacity to understand what shaped them before adversity becomes identity, and systems deserve a better way to judge whether their decisions improve a whole life.",
+  "The thing I want young people to know most is that what happened to you is part of your reality, not the limit of your identity or the author of your future.",
+  "The thing I want adults and systems to understand is that behavior carries context, a placement is not an identity, compliance is not a complete outcome, and every decision should be tested against the life the young person must live afterward.",
+  "Do not fund what I survived. Help build what the next family and the next child should be able to reach before survival becomes the only plan.",
 ];
 
 const onStage = [
@@ -42,17 +42,24 @@ export function Founder() {
           </div>
           <div className="reveal">
             <span className="eyebrow">Founder</span>
-            <h2>Built from experience. Directed toward what comes next.</h2>
+            <h2>My story begins in a family, not in foster care.</h2>
             <p className="founder-bio">
-              Resilience Reimagined Foundation was founded by Tina Rose, whose work brings
-              together lived experience, behavioral science, resilience leadership, writing,
-              executive insight, and a longstanding interest in how people and systems respond to
-              adversity and change.
+              Resilience Reimagined Foundation was founded by Tina Rose, a behavioral scientist,
+              author, and resilience leader whose work brings together lived experience, formal
+              education, and decades of cross-sector systems work.
             </p>
-            <p className="founder-bio">Her connection to this mission is personal.</p>
             <p className="founder-bio">
-              Experiences with foster care, family separation, adversity, and profound loss raised
-              questions that would eventually become much larger than one person&rsquo;s story:
+              Long before her name appeared in a foster-care file, family separation had already
+              begun shaping how she understood belonging. She grew up inside a family that held
+              love, intelligence, harm, instability, and possibility all at once. By nineteen, she
+              had lived in approximately twenty-nine places she called home, including foster care
+              and a children&rsquo;s home, separated for a time from siblings she had helped raise.
+            </p>
+            <p className="founder-bio">
+              Her trajectory changed whenever someone created a bridge: a teacher who recognized her
+              ability, a caregiver who taught a practical skill, a research opportunity that let her
+              see a larger future, a mentor who told her the truth. Those questions raised by her own
+              life eventually became much larger than one person&rsquo;s story:
             </p>
 
             <ul className="whatif-list founder-questions">
@@ -65,9 +72,10 @@ export function Founder() {
             </ul>
 
             <p className="founder-bio" style={{ marginTop: "1.6rem" }}>
-              Those questions became the foundation for a larger body of work, and ultimately for
-              Resilience Reimagined Foundation. The Foundation exists not to tell one story of
-              adversity, but to help build something useful from what adversity can teach us.
+              A nonprofit is necessary because equitable family and youth support, foster-care
+              continuity, public-interest education, and research should be governed for public
+              benefit rather than private return. Those questions became the foundation for
+              Resilience Reimagined Foundation.
             </p>
           </div>
         </div>
@@ -77,7 +85,7 @@ export function Founder() {
           {noteParagraphs.map((p) => (
             <p key={p}>{p}</p>
           ))}
-          <p className="founder-signature">&mdash; Tina Rose, Founder</p>
+          <p className="founder-signature">Tina Rose, Founder</p>
         </div>
       </div>
     </section>

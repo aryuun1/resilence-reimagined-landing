@@ -6,7 +6,6 @@ const columns = [
     heading: "Explore",
     links: [
       { label: "About", to: "/about" },
-      { label: "Our Framework", to: "/approach" },
       { label: "Our Work", to: "/work" },
       { label: "Founder", to: "/founder" },
     ],
@@ -30,8 +29,8 @@ export function Footer() {
             <span className="mark-word">Resilience Reimagined Foundation</span>
           </Link>
           <p className="foot-tagline">
-            Whole-person youth development · Identity &amp; relationship continuity · Education ·
-            Research · Systems change
+            Building tools and learning experiences to help young people understand themselves
+            and move toward a future with purpose.
           </p>
         </div>
 
@@ -56,11 +55,6 @@ export function Footer() {
           Resilience Reimagined Foundation is committed to responsible, evidence-aware education
           and innovation. Foundation educational content is not a substitute for individualized
           medical, mental-health, legal, or other professional care.
-        </p>
-        <p className="foot-fine">
-          Resilience Reimagined Foundation is a nonprofit corporation preparing to apply for
-          recognition of exemption under Section 501(c)(3). Federal tax exempt status has not been
-          recognized.
         </p>
       </div>
     </footer>

@@ -15,8 +15,11 @@ export function WhyNow() {
             adulthood. <strong>Knowing more information is not enough.</strong>
           </p>
           <p>
-            The ability to recognize patterns, evaluate competing information, maintain authentic
-            identity, and make responsible choices is a capacity worth developing intentionally.
+            Feelings and intuition carry information but do not hold the whole truth alone.
+            Evidence can be incomplete. Authority can be wrong. Familiarity is not proof of safety.
+            Technology can inform, but it cannot become conscience. The ability to recognize
+            patterns, evaluate competing information, maintain authentic identity, and make
+            responsible choices is a capacity worth developing intentionally.
           </p>
         </div>
         <p className="vision-closing">And we believe the time to begin is before the next crisis.</p>

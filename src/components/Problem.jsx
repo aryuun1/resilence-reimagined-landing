@@ -1,14 +1,15 @@
 import { HelpCircle } from "lucide-react";
 
 const influences = [
-  "Stress", "Relationships", "Family experiences", "Trauma", "Technology", "Belonging",
+  "Mind", "Body", "Brain", "Nervous system", "Soul", "Spirit", "Energy", "Nutrition",
+  "Identity", "Relationships", "Environment", "Technology", "Power", "Meaning",
 ];
 
 const whatIfs = [
-  "What if we taught them how to recognize patterns before those patterns became repeated outcomes?",
-  "What if identity was protected rather than reduced to a label?",
-  "What if connection was treated as essential to development?",
-  "What if the measure of a system was not simply whether a procedure was completed, but whether a human being became more capable of building a meaningful life?",
+  "What if the life a young person is living is being shaped by a story they did not consciously choose?",
+  "What knowledge would help them see the pattern, test the story, and reclaim authorship of what comes next?",
+  "What if the institutions meant to help are also repeating a pattern they have mistaken for success?",
+  "What if the measure of a system was not simply whether a procedure was completed, but whether a young person became more capable of building a meaningful life?",
 ];
 
 export function Problem() {
@@ -32,17 +33,18 @@ export function Problem() {
         </div>
 
         <div className="problem-copy reveal">
-          <p>All can influence what we perceive, how we respond, and what we believe is possible.</p>
+          <p>Approaches to resilience have often separated what functions together.</p>
           <p>
-            Yet young people may move through education, foster care, family transitions, and
-            other systems without ever receiving practical education about how these influences
-            interact.
+            They tend to measure events, placements, compliance, or recovery time more readily than
+            discernment, relationship continuity, pattern resolution, decision quality, and
+            purposeful contribution. A placement count cannot show whether siblings stayed
+            connected.
           </p>
           <p className="problem-emphasis">We want to change that.</p>
         </div>
 
         <div className="whatif-block reveal">
-          <h3>What if we prepared young people earlier?</h3>
+          <h3>The question that keeps returning</h3>
           <ul className="whatif-list">
             {whatIfs.map((q) => (
               <li key={q}>

@@ -5,11 +5,11 @@ import {
 const CONTACT_URL = "https://funnel.resiliencereimaginedfoundation.com/contact-us-page";
 
 const areas = [
-  { text: "Pattern recognition and resolution", icon: ShieldCheck },
-  { text: "Decision quality and discernment", icon: Scale },
-  { text: "Relationship continuity", icon: Heart },
-  { text: "Educational engagement and future readiness", icon: GraduationCap },
-  { text: "Institutional practices and decision-making", icon: Building2 },
+  { text: "Stronger family support networks and earlier access to concrete help", icon: Building2 },
+  { text: "Youth voice, identity, and decision knowledge", icon: ShieldCheck },
+  { text: "Safe continuity with siblings, kin, schools, mentors, and community", icon: Heart },
+  { text: "Fewer avoidable placement and school changes", icon: GraduationCap },
+  { text: "Stable reunification and enduring adult connection beyond case closure", icon: Scale },
 ];
 
 export function Impact() {
