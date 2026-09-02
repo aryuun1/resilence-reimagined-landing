@@ -28,13 +28,15 @@ export function Books() {
           authorship that shapes the Foundation&rsquo;s work.
         </p>
 
-        <div className="value-grid reveal" style={{ marginTop: "2.5rem" }}>
+        <div className="book-grid reveal">
           {books.map((book) => (
-            <div className="value-card" key={book.title}>
-              <img src={book.cover} alt={`${book.title} book cover`} className="feature-logo" />
-              <h4>{book.title}</h4>
-              <p style={{ fontStyle: "italic", color: "var(--ink)" }}>{book.subtitle}</p>
-              <p>&ldquo;{book.quote}&rdquo;</p>
+            <div className="book-card" key={book.title}>
+              <img src={book.cover} alt={`${book.title} book cover`} className="book-cover" />
+              <div>
+                <h4>{book.title}</h4>
+                <p className="book-subtitle">{book.subtitle}</p>
+                <p className="book-quote">&ldquo;{book.quote}&rdquo;</p>
+              </div>
             </div>
           ))}
         </div>
