@@ -1,4 +1,4 @@
-import { ArrowRight, HeartHandshake, MessageCircle, Users } from "lucide-react";
+import { ArrowRight, HeartHandshake, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const DONATE_URL = "https://funnel.resiliencereimaginedfoundation.com/donate-page";
@@ -14,16 +14,9 @@ const pathways = [
   },
   {
     title: "Become a Partner",
-    text: "We're interested in conversations with educators, youth-serving organizations, community leaders, researchers, and others who share our commitment to young people.",
+    text: "We're interested in conversations with educators, youth-serving organizations, researchers, and community leaders. If you have an idea, a question, or a perspective that could help shape this work, we want to hear it.",
     icon: Users,
     linkLabel: "Start a Conversation",
-    to: "/contact",
-  },
-  {
-    title: "Share Your Perspective",
-    text: "Good ideas get stronger when they're informed by the people they are intended to serve. We want to learn from young people, families, educators, practitioners, and communities.",
-    icon: MessageCircle,
-    linkLabel: "Share Your Perspective",
     to: "/contact",
   },
 ];
@@ -32,20 +25,6 @@ export function GetInvolved() {
   return (
     <section id="partner">
       <div className="wrap">
-        <img
-          src="/images/school-age-connecting-hero-2.jpg"
-          alt="Two children working together on a creative project"
-          style={{
-            display: "block",
-            width: "100%",
-            maxWidth: "700px",
-            aspectRatio: "16 / 9",
-            objectFit: "cover",
-            borderRadius: "14px",
-            border: "1px solid var(--line)",
-            marginBottom: "2.4rem",
-          }}
-        />
         <span className="eyebrow">Get Involved</span>
         <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "22ch" }}>
           Help us build what comes next.
@@ -61,7 +40,7 @@ export function GetInvolved() {
           communities choosing to build it together.
         </p>
 
-        <div className="value-grid reveal" style={{ marginTop: "2.6rem" }}>
+        <div className="value-grid value-grid-2up reveal" style={{ marginTop: "2.6rem" }}>
           {pathways.map((item) => {
             const Icon = item.icon;
             return (

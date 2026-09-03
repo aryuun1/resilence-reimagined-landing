@@ -2,10 +2,9 @@ export function Mission() {
   return (
     <section id="mission" style={{ textAlign: "center" }}>
       <div className="wrap">
-        <span className="eyebrow" style={{ justifyContent: "center" }}>Our Mission</span>
         <p
           className="vision-lead"
-          style={{ margin: "1.4rem auto 0", maxWidth: "44ch", fontFamily: "var(--font-display)" }}
+          style={{ margin: "0 auto", maxWidth: "44ch", fontFamily: "var(--font-display)" }}
         >
           To help young people build the self-understanding, discernment, connection, and agency
           they need to navigate life and move toward a future with purpose.

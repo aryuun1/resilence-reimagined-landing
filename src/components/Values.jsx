@@ -32,7 +32,7 @@ export function Values() {
   return (
     <section id="values">
       <div className="wrap">
-        <span className="eyebrow">What We Believe</span>
+        <h2 style={{ fontSize: "clamp(1.75rem,3.4vw,2.4rem)" }}>What we believe.</h2>
 
         <div className="value-grid reveal" style={{ marginTop: "2rem" }}>
           {values.map((value) => {

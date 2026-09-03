@@ -11,20 +11,6 @@ export function Vision() {
           Our families shape us. Our relationships, environments, experiences, losses,
           opportunities, technology, and the stories we tell ourselves all play a part.
         </p>
-        <img
-          src="/images/foster2.jpg"
-          alt="Children sharing a quiet moment together"
-          style={{
-            display: "block",
-            width: "min(100%, 420px)",
-            aspectRatio: "4 / 3",
-            objectFit: "cover",
-            borderRadius: "14px",
-            border: "1px solid var(--line)",
-            boxShadow: "0 14px 28px var(--shadow)",
-            margin: "2.4rem auto 0",
-          }}
-        />
         <div className="vision-body">
           <p>But what shapes us doesn&rsquo;t have to decide everything that comes next.</p>
           <p>

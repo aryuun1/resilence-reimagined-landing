@@ -19,9 +19,8 @@ export function Hero() {
         <span className="eyebrow">Resilience Reimagined</span>
         <h1>Resilience can become more than survival.</h1>
         <p className="sub">
-          Resilience Reimagined is building tools, learning experiences, and partnerships to help
-          young people better understand themselves, navigate life&rsquo;s challenges, stay
-          connected to who they are, and move toward a future with purpose.
+          We&rsquo;re building tools, learning experiences, and partnerships to help young people
+          understand themselves and move toward a future with purpose.
         </p>
         <div className="hero-ctas">
           <Link className="btn btn-primary" to="/get-involved">Get Involved<ArrowRight size={17} aria-hidden="true" /></Link>

@@ -1,11 +1,8 @@
-import { ShieldCheck } from "lucide-react";
-
 export function StatusBand() {
   return (
     <section className="status-band" id="transparency">
       <div className="wrap">
-        <span className="eyebrow"><ShieldCheck size={14} aria-hidden="true" />Transparency</span>
-        <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "20ch" }}>
+        <h2 style={{ fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "20ch" }}>
           Building responsibly.
         </h2>
         <p className="lede" style={{ marginTop: "1.2rem" }}>

@@ -59,23 +59,8 @@ export function Home() {
 
       <section id="areas" style={{ background: "var(--surface-soft)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)" }}>
         <div className="wrap">
-          <img
-            src="/images/foster1.jpg"
-            alt="A diverse group of young people smiling together"
-            style={{
-              display: "block",
-              width: "100%",
-              maxWidth: "560px",
-              aspectRatio: "3 / 2",
-              objectFit: "cover",
-              objectPosition: "top center",
-              borderRadius: "14px",
-              border: "1px solid var(--line)",
-              margin: "0 auto 2.4rem",
-            }}
-          />
-          <span className="eyebrow">Where We&rsquo;re Starting</span>
-          <div className="value-grid reveal" style={{ marginTop: "2rem" }}>
+          <h2 style={{ fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "26ch" }}>Where we&rsquo;re starting.</h2>
+          <div className="value-grid value-grid-featured reveal" style={{ marginTop: "2.5rem" }}>
             {areas.map((area) => {
               const Icon = area.icon;
               return (
