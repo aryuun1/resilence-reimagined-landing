@@ -10,7 +10,7 @@ const links = [
   { label: "Our Work", to: "/work" },
   { label: "Founder", to: "/founder" },
   { label: "Get Involved", to: "/get-involved" },
-  { label: "Contact", to: "/contact" },
+  { label: "Schedule", to: "/contact" },
 ];
 
 export function Nav() {
