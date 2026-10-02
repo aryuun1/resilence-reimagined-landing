@@ -1,4 +1,5 @@
-import { ArrowRight, Layers, Sparkles, Target } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CONTACT_URL = "https://funnel.resiliencereimaginedfoundation.com/contact-us-page";
 
@@ -35,17 +36,20 @@ export function Portfolio() {
             className="feature-card-bg"
           />
           <div>
-            <img src="/images/IMG_1336.jpeg" alt="INDIGLOW logo" className="feature-logo" />
-            <span className="tag"><Sparkles size={12} aria-hidden="true" />INDIGLOW</span>
+            <img src="/images/IMG_1336.jpeg" alt="INDIGLOW logo" className="indiglow-card-img" />
+            <span className="tag">INDIGLOW</span>
             <h3>Helping young people better understand themselves and their world.</h3>
             <p>
               INDIGLOW is being developed as a whole-person learning experience focused on
               identity, connection, discernment, wellbeing, creativity, and purpose.
             </p>
             <span className="status-pill">In early development.</span>
+            <Link className="btn btn-ghost btn-sm" to="/indiglow" style={{ marginTop: "1.2rem" }}>
+              Learn More About INDIGLOW<ArrowRight size={15} aria-hidden="true" />
+            </Link>
           </div>
           <div className="feature-side">
-            <span><Target size={12} aria-hidden="true" />Built around a simple belief</span>
+            <span>Built around a simple belief</span>
             No circumstance, label, placement, diagnosis, reaction, or decision made by someone
             else tells the whole story of who a young person is.
           </div>
@@ -53,7 +57,7 @@ export function Portfolio() {
 
         <div className="feature-card reveal" id="p2p">
           <div>
-            <span className="tag"><Sparkles size={12} aria-hidden="true" />Pattern to Purpose</span>
+            <span className="tag">Pattern to Purpose</span>
             <h3>Understanding what shaped us, and choosing what comes next.</h3>
             <p>
               P2P is an emerging learning approach designed to help people recognize patterns,
@@ -62,14 +66,14 @@ export function Portfolio() {
             <span className="status-pill">Early-stage: framework in development.</span>
           </div>
           <div className="feature-side">
-            <span><Target size={12} aria-hidden="true" />The destination is not endless reflection</span>
+            <span>The destination is not endless reflection</span>
             It is greater awareness, responsible action, and purpose.
           </div>
         </div>
 
         <div className="feature-card reveal" id="rethinking-support">
           <div>
-            <span className="tag"><Layers size={12} aria-hidden="true" />Rethinking Support</span>
+            <span className="tag">Rethinking Support</span>
             <h3>Looking beyond the immediate moment to the whole life.</h3>
             <p>
               We&rsquo;re exploring how education, foster care, families, and communities can
@@ -79,7 +83,7 @@ export function Portfolio() {
             <span className="status-pill">Early-stage exploration.</span>
           </div>
           <div className="feature-side">
-            <span><Target size={12} aria-hidden="true" />Our guiding question</span>
+            <span>Our guiding question</span>
             What would it take for a young person to have what they need before they need it?
           </div>
         </div>

@@ -2,13 +2,13 @@ const books = [
   {
     title: "The Enduring Enterprise",
     subtitle: "How Resilience and AI are Competitive Advantages for Modern Leaders",
-    cover: "/images/book-enduring-enterprise-cover.png",
+    cover: "/images/2026Mar27_RoseTina-The_Enduring_Enterprise_Cover.jpeg",
     quote: "It starts quietly. A trading screen freezes. A payment system stalls. A critical vendor goes dark. In that moment, the resilient organization has an advantage: clarity.",
   },
   {
     title: "Becoming Unbreakable",
     subtitle: "Reframe Your Story, Reclaim Your Life",
-    cover: "/images/book-becoming-unbreakable-cover.png",
+    cover: "/images/BecomingUnbreakable_draft_cover.jpg",
     quote: "Roots hold what the storm cannot take. Reframe your story, reclaim your life.",
   },
 ];

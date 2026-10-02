@@ -1,4 +1,3 @@
-import { HelpCircle, PenLine } from "lucide-react";
 import { LotusMark } from "./LotusIcon.jsx";
 
 const questions = [
@@ -65,7 +64,6 @@ export function Founder() {
             <ul className="whatif-list founder-questions">
               {questions.map((q) => (
                 <li key={q}>
-                  <HelpCircle size={17} aria-hidden="true" />
                   <span>{q}</span>
                 </li>
               ))}
@@ -81,7 +79,7 @@ export function Founder() {
         </div>
 
         <div className="founder-note reveal">
-          <span className="founder-note-label"><PenLine size={16} aria-hidden="true" />A Note From Our Founder</span>
+          <span className="founder-note-label">A Note From Our Founder</span>
           {noteParagraphs.map((p) => (
             <p key={p}>{p}</p>
           ))}

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Mail } from "lucide-react";
 
 const BOOKING_SCRIPT_SRC = "https://link.automator.ai/js/form_embed.js";
 
@@ -16,7 +15,7 @@ export function Contact() {
     <section id="contact" style={{ textAlign: "center", padding: "6rem 0" }}>
       <div className="wrap">
         <span className="eyebrow" style={{ justifyContent: "center" }}>
-          <Mail size={14} aria-hidden="true" /> Book an Appointment.
+          Book an Appointment.
         </span>
         <h1 style={{ marginTop: "1rem", fontSize: "clamp(1.9rem,4vw,2.8rem)" }}>
           Let&rsquo;s start a conversation.

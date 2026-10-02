@@ -1,5 +1,3 @@
-import { HelpCircle } from "lucide-react";
-
 const influences = [
   "Mind", "Body", "Brain", "Nervous system", "Soul", "Spirit", "Energy", "Nutrition",
   "Identity", "Relationships", "Environment", "Technology", "Power", "Meaning",
@@ -48,7 +46,6 @@ export function Problem() {
           <ul className="whatif-list">
             {whatIfs.map((q) => (
               <li key={q}>
-                <HelpCircle size={17} aria-hidden="true" />
                 <span>{q}</span>
               </li>
             ))}

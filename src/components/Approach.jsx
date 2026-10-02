@@ -1,13 +1,11 @@
-import { Brain, Eye, GitBranch, Heart, HelpCircle, RefreshCw, Zap } from "lucide-react";
-
 const steps = [
-  { title: "Recognize", text: "Patterns as they take shape.", icon: Eye },
-  { title: "Examine", text: "Objectively, before assuming.", icon: Brain },
-  { title: "Acknowledge", text: "Influence, and where it comes from.", icon: HelpCircle },
-  { title: "Liberate", text: "Intentionally from what no longer serves.", icon: GitBranch },
-  { title: "Integrate", text: "Wisdom into the way forward.", icon: RefreshCw },
-  { title: "Trust", text: "Discernment over certainty.", icon: Heart },
-  { title: "Yield", text: "To truth, even when it is inconvenient.", icon: Zap },
+  { title: "Recognize", text: "Patterns as they take shape." },
+  { title: "Examine", text: "Objectively, before assuming." },
+  { title: "Acknowledge", text: "Influence, and where it comes from." },
+  { title: "Liberate", text: "Intentionally from what no longer serves." },
+  { title: "Integrate", text: "Wisdom into the way forward." },
+  { title: "Trust", text: "Discernment over certainty." },
+  { title: "Yield", text: "To truth, even when it is inconvenient." },
 ];
 
 export function Approach() {
@@ -29,16 +27,12 @@ export function Approach() {
 
         <div className="flow-scroll reveal">
           <div className="flow">
-            {steps.map((step) => {
-              const Icon = step.icon;
-              return (
-                <div className="flow-node" key={step.title}>
-                  <span className="fn-icon"><Icon size={18} aria-hidden="true" /></span>
-                  <h4>{step.title}</h4>
-                  <p>{step.text}</p>
-                </div>
-              );
-            })}
+            {steps.map((step) => (
+              <div className="flow-node" key={step.title}>
+                <h4>{step.title}</h4>
+                <p>{step.text}</p>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -17,7 +17,7 @@ export function Hero() {
       </svg>
       <div className="wrap hero-inner">
         <span className="eyebrow">Resilience Reimagined</span>
-        <h1>Resilience can become more than survival.</h1>
+        <h1> Resilience is about rising, rebuilding, and moving forward.</h1>
         <p className="sub">
           We&rsquo;re building tools, learning experiences, and partnerships to help young people
           understand themselves and move toward a future with purpose.
@@ -27,6 +27,6 @@ export function Hero() {
           <Link className="btn btn-ghost" to="/work">Explore Our Work<ArrowRight size={17} aria-hidden="true" /></Link>
         </div>
       </div>
-    </header>
+    </header> 
   );
 }

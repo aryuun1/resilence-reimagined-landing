@@ -1,5 +1,3 @@
-import { MessageCircleQuestion } from "lucide-react";
-
 const questions = [
   "What does the public misunderstand about young people who experience foster care?",
   "What concerns you most about placement changes, school changes, separation, or aging out?",
@@ -29,7 +27,6 @@ export function FosterCare() {
         <div className="question-grid reveal">
           {questions.map((q) => (
             <div className="question-item" key={q}>
-              <MessageCircleQuestion size={18} aria-hidden="true" />
               <span>{q}</span>
             </div>
           ))}

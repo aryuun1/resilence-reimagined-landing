@@ -1,10 +1,8 @@
-import { Clock } from "lucide-react";
-
 export function WhyNow() {
   return (
     <section id="why-now" style={{ background: "var(--surface-soft)", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", textAlign: "center" }}>
       <div className="wrap">
-        <span className="eyebrow"><Clock size={14} aria-hidden="true" />Why Now?</span>
+        <span className="eyebrow">Why Now?</span>
         <h2 style={{ marginTop: "1rem", fontSize: "clamp(1.75rem,3.4vw,2.4rem)", maxWidth: "34ch", margin: "1rem auto 0" }}>
           The world young people are entering is changing fast.
         </h2>

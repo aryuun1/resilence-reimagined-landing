@@ -83,6 +83,7 @@ p{margin:0;}
   display:flex;align-items:center;justify-content:space-between;gap:1.5rem;}
 .mark{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);}
 .mark svg, .mark img{width:26px;height:26px;flex:none;}
+.nav-brand-mark{border-radius:7px;object-fit:cover;}
 .mark-word{font-family:var(--font-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;}
 .navlinks{display:flex;gap:1.8rem;list-style:none;margin:0;padding:0;}
 .navlinks a{font-size:.9rem;color:var(--ink-soft);text-decoration:none;transition:color .15s;}
@@ -481,6 +482,10 @@ p{margin:0;}
 .feature-card + .feature-card .feature-side span{color:var(--teal-strong);}
 .feature-side span svg{flex:none;}
 .feature-logo{width:56px;height:56px;object-fit:contain;margin-bottom:1.1rem;background:#fff;border-radius:10px;padding:.5rem;border:1px solid var(--line);}
+.indiglow-card-img{
+  width:100%;max-width:240px;aspect-ratio:1;object-fit:contain;
+  background:#fff;border-radius:16px;padding:1rem;margin-bottom:1.2rem;box-shadow:0 14px 28px var(--shadow);
+}
 
 .grid-cards{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:2.5rem;}
 @media (min-width:640px){ .grid-cards{grid-template-columns:1fr 1fr;} }
@@ -708,3 +713,17 @@ footer{padding:3.5rem clamp(1.25rem,4vw,3rem) 2.5rem;border-top:1px solid var(--
     50%{box-shadow:0 1px 0 var(--shadow), 0 0 0 8px color-mix(in srgb, var(--coral) 0%, transparent);}
   }
 }
+
+/* ---------- indiglow page ---------- */
+.indiglow-hero{
+  position:relative;text-align:center;
+  background:var(--ground);color:var(--ink);
+  padding-top:clamp(3rem,7vw,5rem);padding-bottom:clamp(4rem,8vw,6rem);
+}
+.indiglow-hero-inner{position:relative;z-index:1;}
+.indiglow-hero-img{
+  width:clamp(200px,30vw,340px);height:clamp(200px,30vw,340px);object-fit:contain;margin:0 auto 1.4rem;
+  background:#fff;border-radius:24px;padding:1.6rem;box-shadow:0 20px 40px var(--shadow);
+}
+.indiglow-hero h1{margin-top:.8rem;font-size:clamp(2.4rem,6vw,3.6rem);letter-spacing:.02em;}
+.indiglow-hero .status-pill{justify-content:center;margin-top:1.4rem;}

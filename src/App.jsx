@@ -3,6 +3,7 @@ import { Layout } from "./Layout.jsx";
 import { Home } from "./pages/Home.jsx";
 import { About } from "./pages/About.jsx";
 import { Work } from "./pages/Work.jsx";
+import { Indiglow } from "./pages/Indiglow.jsx";
 import { FounderPage } from "./pages/FounderPage.jsx";
 import { GetInvolvedPage } from "./pages/GetInvolvedPage.jsx";
 import { Contact } from "./pages/Contact.jsx";
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/indiglow" element={<Indiglow />} />
         <Route path="/founder" element={<FounderPage />} />
         <Route path="/get-involved" element={<GetInvolvedPage />} />
         <Route path="/contact" element={<Contact />} />

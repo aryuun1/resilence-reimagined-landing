@@ -1,13 +1,13 @@
 import { ArrowRight, Menu, X } from "lucide-react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { LotusMark } from "./LotusIcon.jsx";
 
 const DONATE_URL = "https://funnel.resiliencereimaginedfoundation.com/donate-page";
 
 const links = [
   { label: "About", to: "/about" },
   { label: "Our Work", to: "/work" },
+  { label: "INDIGLOW", to: "/indiglow" },
   { label: "Founder", to: "/founder" },
   { label: "Get Involved", to: "/get-involved" },
   { label: "Schedule", to: "/contact" },
@@ -32,7 +32,7 @@ export function Nav() {
     <nav className="nav">
       <div className="nav-inner">
         <Link className="mark" to="/">
-          <LotusMark />
+          <img src="/images/IMG_1348.jpeg" alt="" aria-hidden="true" className="nav-brand-mark" />
           <span className="mark-word">Resilience Reimagined</span>
         </Link>
         <ul className="navlinks">

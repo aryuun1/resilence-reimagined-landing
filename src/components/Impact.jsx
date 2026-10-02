@@ -1,15 +1,13 @@
-import {
-  ArrowRight, Building2, GraduationCap, Heart, Scale, ShieldCheck,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const CONTACT_URL = "https://funnel.resiliencereimaginedfoundation.com/contact-us-page";
 
 const areas = [
-  { text: "Stronger family support networks and earlier access to concrete help", icon: Building2 },
-  { text: "Youth voice, identity, and decision knowledge", icon: ShieldCheck },
-  { text: "Safe continuity with siblings, kin, schools, mentors, and community", icon: Heart },
-  { text: "Fewer avoidable placement and school changes", icon: GraduationCap },
-  { text: "Stable reunification and enduring adult connection beyond case closure", icon: Scale },
+  "Stronger family support networks and earlier access to concrete help",
+  "Youth voice, identity, and decision knowledge",
+  "Safe continuity with siblings, kin, schools, mentors, and community",
+  "Fewer avoidable placement and school changes",
+  "Stable reunification and enduring adult connection beyond case closure",
 ];
 
 export function Impact() {
@@ -28,15 +26,11 @@ export function Impact() {
 
         <p className="capacity-intro" style={{ marginTop: "2.6rem" }}>Our developing evaluation areas include:</p>
         <div className="capacity-grid reveal">
-          {areas.map((area, i) => {
-            const Icon = area.icon;
-            return (
-              <div className="capacity-item" key={area.text} data-accent={i % 3}>
-                <Icon size={17} aria-hidden="true" />
-                <span>{area.text}</span>
-              </div>
-            );
-          })}
+          {areas.map((area, i) => (
+            <div className="capacity-item" key={area} data-accent={i % 3}>
+              <span>{area}</span>
+            </div>
+          ))}
         </div>
 
         <p className="lede" style={{ marginTop: "2rem" }}>
